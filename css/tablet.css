@@ -1,0 +1,32 @@
+@media (min-width: 321px) and (max-width: 768px) {
+    .container {
+        max-width: 709px;
+        margin: 0 auto;
+        padding: 0 30px;
+    }
+    .header {
+        padding-top: 24px;
+    }
+    .header__logo {
+        width: 174px;
+        height: 51.68px;
+    }
+    .header__link {
+        color: black;
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .header__link a::after {
+        background: #68B738;
+    }
+    .header__bg-img {
+        display: none;
+    }
+    .header__img {
+        top: 341px;
+        width: 709px;
+        height: 609px;
+        left: 0;
+        z-index: -1;
+    }
+}

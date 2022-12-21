@@ -1,0 +1,163 @@
+@font-face {
+    font-family: Oswald;
+    src: url(../fonts/Oswald-Regular.ttf) format(truetype);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Arial;
+    src: url(../fonts/ArialMdm.ttf) format(truetype);
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1280px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Oswald', Arial, sans-serif;
+}
+
+
+/* header */
+
+.header {
+    padding: 53px 0;
+    display: flex;
+    flex-direction: column;
+    height: 696px;
+}
+
+.header__mobile-nav {
+    display: none;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    width: 202px;
+    height: 59px;
+}
+
+.header__wrapper-link {
+    display: flex;
+    gap: 32px;
+}
+
+.header__link {
+    position: relative;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.header__link a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: .5s;
+}
+
+.header__link a:hover::after {
+    width: 100%;
+    left: 0;
+    right: 0;
+}
+
+.header__content {
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.header__headline {
+    margin-top: 111px;
+    width: 414px;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+}
+
+.header__text {
+    margin-top: 40px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.header__button {
+    margin-top: 50px;
+    width: 244px;
+    height: 54px;
+    background: #68B738;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+    border: 0;
+}
+
+.header__img {
+    position: absolute;
+    left: 448px;
+    width: 552px;
+    height: 499px;
+}
+
+.header__bg-img {
+    background-image: url(../images/bg\ cat.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+    height: 696px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+
+/* type */
