@@ -72,11 +72,208 @@
         width: 100%;
     }
     .header__bg-img {
-        background-size: contain;
+        width: 100%;
+        height: 305px;
         left: 0px;
         right: 0;
         top: 66px;
+    }
+    /* type */
+    .type {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .type__card {
         width: 100%;
-        height: 305px;
+        padding: 23px 20px;
+    }
+    .type__mobile__hr {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 2px;
+        color: #D9D9D9;
+        background: #D9D9D9;
+    }
+    .type__img-bg {
+        width: 50px;
+        height: 50px;
+    }
+    .type__img {
+        width: 36px;
+        height: 50px;
+    }
+    .type__img2 {
+        width: 67px;
+        height: 28px;
+    }
+    .type__title {
+        font-size: 24px;
+        line-height: 37px;
+    }
+    .type__text {
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .type__link {
+        margin-top: 0;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    /* works */
+    .works {
+        padding-bottom: 42px;
+        margin-top: 27px;
+        gap: 38px;
+    }
+    .works__title {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .works__wrapper {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .works__card {
+        flex-direction: row;
+        gap: 20px;
+    }
+    .works__text {
+        width: 200px;
+        font-size: 14px;
+        line-height: 18px;
+        color: #444444;
+    }
+    .works__bg-img {
+        width: 60px;
+        height: 60px;
+    }
+    .works__bg-card {
+        display: none;
+    }
+    /* example */
+    .example__big-img {
+        display: none;
+    }
+    .example__thin-img {
+        display: none;
+    }
+    .example {
+        background: #EAEAEA;
+        margin-top: 0;
+        padding: 30px 0;
+    }
+    .example__title {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .example__content {
+        flex-direction: column;
+        padding: 0;
+    }
+    .example__content-card {
+        width: 100%;
+        height: auto;
+    }
+    .example__text {
+        margin-top: 33px;
+        font-size: 14px;
+        line-height: 18px;
+    }
+    .example__main-warp {
+        gap: 30px;
+    }
+    .example__wrapper {
+        gap: 0;
+        margin-top: 25px;
+        justify-content: space-between;
+    }
+    .example__cost {
+        margin-top: 0;
+        gap: 5px;
+        justify-content: center;
+    }
+    .example__desc {
+        font-size: 24px;
+        line-height: 24px;
+    }
+    .mobile__example-img {
+        display: block;
+        margin-top: 42px;
+        width: 100%;
+        height: auto;
+    }
+    .example__animation {
+        padding: 0 50px;
+        margin-top: 27px;
+        gap: 0;
+        justify-content: space-between;
+    }
+    .example__animation-desc {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .example__line {
+        background: white;
+        padding-left: 6px;
+        justify-content: flex-start;
+        width: 84px;
+        height: 14px;
+        border-radius: 6px;
+    }
+    .example__ball {
+        border-radius: 6px;
+        background: #68B738;
+        width: 35px;
+        height: 6px;
+    }
+    .example__in-ball {
+        display: none;
+    }
+    /* map */
+    .map__map {
+        height: 362px;
+        position: absolute;
+        top: 114px;
+    }
+    .map__content {
+        padding: 0 19px;
+        height: 114px;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    .map__title {
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .map__location {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    /* footer */
+    .bg__color {
+        margin-top: 470px;
+    }
+    .footer {
+        padding-bottom: 22px;
+        padding-top: 40px;
+        height: 236px;
+        flex-direction: column;
+    }
+    .mobile__hr-footer {
+        display: block;
+        width: 280px;
+        height: 1px;
+        background: #D9D9D9;
+    }
+    .footer__main-link {
+        gap: 40px;
+    }
+    .footer__headline {
+        width: 100%;
+        gap: 0;
+        justify-content: space-between;
     }
 }
