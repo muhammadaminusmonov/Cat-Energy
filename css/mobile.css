@@ -25,15 +25,19 @@
         position: relative;
     }
     .mobile__wrapper {
+        background: blue;
         position: absolute;
-        display: none;
+        /* display: none; */
         right: 100%;
         top: 0px;
-        background: #F2F2F2;
+        background: #68B738;
         transition: .5s;
-        width: 100%;
+        width: 200px;
+        padding: 10px 15px;
+        gap: 10px;
+        color: white;
     }
-    .mobile__wrapper:hover {
+    .mobile__wrapper:active {
         display: block;
     }
     .header__nav {
