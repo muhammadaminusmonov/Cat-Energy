@@ -8,6 +8,7 @@
         margin-top: 11px;
         display: flex;
         justify-content: space-between;
+        position: relative;
     }
     .header__mobile-logo {
         width: 33.32px;
@@ -18,6 +19,7 @@
         height: 18px;
     }
     .mobile__img {
+        cursor: pointer;
         width: 24px;
         height: 16px;
     }
@@ -27,8 +29,9 @@
     .mobile__wrapper {
         background: blue;
         position: absolute;
-        /* display: none; */
-        right: 100%;
+        display: none;
+        right: 50%;
+        transform: translate(0 -50%);
         top: 0px;
         background: #68B738;
         transition: .5s;
@@ -36,8 +39,18 @@
         padding: 10px 15px;
         gap: 10px;
         color: white;
+        animation-name: mobileWrapperAnimation;
+        animation-duration: .3s;
     }
-    .mobile__wrapper:active {
+    @keyframes mobileWrapperAnimation {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+    .mobile:hover .mobile__wrapper {
         display: block;
     }
     .header__nav {
